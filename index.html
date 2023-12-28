@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI-Generator</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <h1>Welcome to the AI generator</h1>
       </header>
       <main>
-        <form action="">
+        <form id="form-generator">
           <input
             type="text"
             placeholder="write your topic"
@@ -23,7 +24,7 @@
           />
           <button type="submit" class="submit-button">Generate</button>
         </form>
-        <div class="answer">
+        <div class="answer" id="reponse-generator">
           <div>the response will go here</div>
         </div>
       </main>

@@ -23,13 +23,14 @@ form {
 footer {
   text-align: center;
   font-size: 12px;
-  margin-top: 15px;
+  margin-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  color: white;
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(84, 13, 13);
 }
 
 .heading {
@@ -93,9 +94,11 @@ a {
 .hidden {
   display: none;
 }
-
-.spotify {
-  margin-top: 30px;
+.snowflake {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.8;
+  width: 100px;
 }
 
 .generating {

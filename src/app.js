@@ -12,10 +12,10 @@ function generateAI(response) {
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "7cfac3t6d90fo31f4fb0ff0151e8560c";
   let context =
-    "You are an expert chef who loves to Christmas. Your mission is to plan a Christmas recipe in basic HTML. Make sure to be precise and detailed with bullet points and show the recipe complete. Make sure to follow the instructions below and give the complete instructions. Please! at the end of the recipe sign with SheCodes AI in bold and at the end write a Christmas quote";
+    "You are an expert chef who loves to Christmas. Your mission is to plan a Christmas recipe in basic HTML. Make sure to be precise and detailed with bullet points and show the recipe complete. Make sure to follow the instructions below and give the complete instructions.Make the h1 a little bit smaller. Please! at the end of the recipe and at the  write a Christmas quote and sign with SheCodes AI in bold, ";
   let prompt = `User instructions: Generate a Christmas recipe of ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-
+  instructionsInput.value = "";
   axios.get(apiUrl).then(showResponse);
 }
 
